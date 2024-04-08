@@ -9,19 +9,32 @@ Si es más pequeño, la consola registra
 "¡El número es menor que 50!"
 */
 
-let operations = function (a, b, c, d) {
-  return (a+b)*(c+d);
+let operations_one = function (a, b, c, d) {
+  return (a+b);
 };
-console.log ( operations(1, 3, 0.5, 12) );
-  if (operations > 50) {
+console.log ( operations_one(1, 2, 3, 4) );
+  if (operations_one > 50) {
   console.log('¡El número es mayor que 50!');
-  } else if (operations = 50) {
-    console.log('¡El número es 50!');
-  } else if {
+  } else {
     console.log('¡El número es menor que 50!');
 }
 
-/*
-Nota: me he permitido una ligera variación en el 
-planteamiento de la asignación inicial ;-)
-*/
+let operations_two = function (a, b, c, d) {
+  return (c+d);
+};
+console.log ( operations_two(1, 2, 3, 4) );
+  if (operations_two > 50) {
+  console.log('¡El número es mayor que 50!');
+  } else {
+    console.log('¡El número es menor que 50!');
+}
+
+let operations_three = function (a, b, c, d) {
+  return (a+b)*(c+d);
+};
+console.log ( operations_three(1, 2, 3, 4) );
+  if (operations_three > 50) {
+  console.log('¡El número es mayor que 50!');
+  } else {
+    console.log('¡El número es menor que 50!');
+}
